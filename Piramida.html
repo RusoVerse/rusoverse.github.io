@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+	<div class="header">
+		<p><img src="Assets\MFS Logo.png" alt="logo" />
+	  </div>
+	  <section class="attribution">
+		<span>
+		  <h1 style="text-align:center">PIRAMIDA</h1>
+		</span>
+	  </section>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Model Viewer</title>
+	<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+	<style>
+		model-viewer{
+			width: 300px;
+			height: 350px;
+			margin: 0 auto;
+			
+		}
+		body {
+			background-color:white
+		}
+	</style>
+</head>
+<body>
+	<model-viewer 
+	src="Assets\Piramida.glb"  
+	ios-src="Assets\Piramida.usdz"
+	shadow-intensity="1"
+	camera-controls 
+	auto-rotate ar
+	  >
+	</model-viewer>
+</body>
+<section class="attribution">
+	<span>
+	  <p style="text-align:center">Slika 4.1.2a</p>
+	</span>
+  </section>
+  <footer>
+	<p>© 2022 Nikolaj Popovski. All rights reserved</p>
+  </footer>
+</html>
