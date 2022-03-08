@@ -4,13 +4,16 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" tytle="text/css" href="Style.CSS">
 	<title>Model Viewer</title>
 	<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 	<style>
 		model-viewer {
-			width: 300px;
+			width: auto;
 			height: 350px;
+			max-height: 100vh;
 			margin: 0 auto;
+			background-color: lightgrey ;
 
 		}
 
@@ -44,8 +47,7 @@
 	<div class="header">
 		<img src="https://www.mf.ukim.edu.mk/sites/default/files/mfs-logo-www-s_0.png" alt="logo" style="width: auto;height: 48px"/>
 		<h2>ПИРАМИДА</h2>
-	</div>
-	<div style="border-style: solid;">
+
 		<model-viewer 
 			src="Assets\Piramida.glb" 
 			ios-src="Assets\Piramida.usdz" 
@@ -63,12 +65,10 @@
 	<span>
 		<p style="text-align:center">Слика 4.1.2а</p>
 		<p style="text-align:center">Моделот кој е прикажан погоре е интерактивен приказ на правилна тристана пирамида во тродимензионален простор.</p>
-		<br>
-		<br>
 	</span>
 </section>
 
-<footer>
+<footer id="footer">
 	<p>© 2022 Nikolaj Popovski</p>
 </footer>
 
